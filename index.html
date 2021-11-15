@@ -1,0 +1,97 @@
+<html>
+    <head>
+      <!--Created by Jose Abraham Hernandez Moreno PG10 11/04/2017-->
+      <title>Battleship</title>
+      <!--Link to the css file -->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/mediastyle.css">
+    </head>
+    <body>
+      <!--Container for the navigation bar -->
+      <div id="nav" class="nav-container">
+      <div>
+        <!--Buttons with links to the same page (anchors) -->
+        <a href="#welcome"><button class="button button-hover">Welcome</button></a>
+        <a href="#tableGame"><button class="button button-hover">Let's play</button></a>
+        <a href="#divShots"><button class="button button-hover">Shoots</button></a>
+        <a href="#tableShips"><button class="button button-hover">How many left?</button></a>
+      </div>
+      </div>
+      <!--Container for the dialog when the player loses -->
+      <div id="dialogLose" class="container">
+        <div id="losemesage" class="item">
+          <h1>YOU RUN OUT OF SHOTS :S</h1>
+        </div>
+        <div id="loseButton" class="item">
+          <button class="button button-hover">Play Again?</button>
+        </div>
+      </div>
+      <!--Container for the dialog when the player wins -->
+      <div id="dialogeWin" class="container">
+        <div id="winMesage" class="item">
+          <h1>YOU SUNK ALL THE SHIPS :D</h1>
+        </div>
+        <div id="WinButton" class="item">
+          <button class="button button-hover">Play Again?</button>
+        </div>
+      </div>
+      <!--Container for the welcome message and table for the game -->
+      <div class="container">
+      <div id="welcome"class="item">
+        <h1>Welcome to Battleship</h1>
+      </div>
+      <!--Container for the menu -->
+      <div id="menu" class="container">
+        <div id="imageMenu" class="item">
+           <img src="images/back.jpg" alt="Ships">
+        </div>
+        <div id="menu-Button" class="item">
+          <button class="button button-hover">Play</button>
+        </div>
+      </div>
+      <!--Table 10x10 -->
+      <div id="tableGame" class="item">
+      </div>
+    </div>
+    <br/>
+    <!--Container with the information about the shoots left -->
+    <div class="shots-container">
+    <div id="divShots" class="item">
+      <h1>Shots Left:</h1>
+    </div>
+    <div id="shots"class="item">
+      <h1>40</h1>
+    </div>
+  </div>
+  <!--Container with a table to create the images of the ships and with the box for the dialogs to appear -->
+    <div class="container">
+      <div id="tableShips" class="item">
+        <!--Table with images -->
+        <table class="table-score">
+          <tr>
+            <th id ="boat0" class="background-ship-small"></th>
+            <th id ="boat1" class="background-ship-med"></th>
+            <th id ="boat2" class="background-ship-lar"></th>
+            <th id ="boat3"class="background-ship-lar"></th>
+            <th id ="boat4" class="background-ship-xl"></th>
+          </tr>
+        </table>
+      </div>
+      <!--Dialogue segment -->
+      <div id="dialogs" class="item text">
+        <h3>Ready to play?</h3>
+      </div>
+    </div>
+    <!--Footer -->
+    <footer id="foo">
+      <div class="text footer-item">
+        <p>Game by Jose Abraham Hernandez Moreno PG10</p>
+      </div>
+    </footer>
+    </boby>
+    <!--Links to the javascript files -->
+    <!-- buzz library-->
+    <script src="scripts/buzz.js" defer></script>
+    <!--App script -->
+    <script src="scripts/app.js" defer></script>
+</html>

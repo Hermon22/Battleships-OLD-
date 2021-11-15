@@ -1,0 +1,139 @@
+/*Style for the containers some with row direction some with column direction */
+.container {
+  display: flex;
+   justify-content: center;
+   flex-direction: column;
+
+}
+.nav-container{
+  display: flex;
+  justify-content:flex-start;
+  flex-direction: row;
+}
+footer{
+  display: flex;
+  justify-content:flex-end;
+  flex-direction: row;
+}
+
+.shots-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+/*Style for the items on the containers */
+.item{
+   align-self: center;
+   flex-basis: auto;
+   flex-shrink: 1;
+   color: white;
+}
+/*Style for the buttons, the hover is to change the appearance when the mouse is on top of it*/
+.button{
+  border:none;
+  background-color: #46B262;
+  color: white;
+  padding: 20px;
+}
+.button-hover:hover{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color: white;
+  color: #46B262;
+}
+/*Style for the tables */
+.table-game{
+  width: 600px;
+  height: 600px;
+  color: white;
+  padding: 0;
+  margin:0;
+  border-collapse: collapse;
+}
+/*Style to hide  elements*/
+.hide{
+  display: none;
+}
+/*Style for the image of the menu*/
+img {
+  width: 1500px ;
+  height: 850px;
+  padding: 20px;
+}
+
+
+/*Style fir the tags td and tr */
+td, tr {
+  border-style: solid;
+  padding: 0;
+  margin:0;
+}
+.table-score{
+  width: 1300px;
+  height: 200px;
+  padding: 10px;
+}
+/*Tag for the body, to inplement the background image */
+body{
+  background-image: url('../images/ocean.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+/*Set of styles to add the images of the ships to the table in order to display the images */
+.background-ship-small{
+  background-image: url('../images/ShipSmall.png');
+  background-repeat: no-repeat;
+}
+.background-ship-med{
+  background-image: url('../images/ShipMed.png');
+  background-repeat: no-repeat;
+}
+.background-ship-lar{
+  background-image: url('../images/ShipLar.png');
+  background-repeat: no-repeat;
+}
+.background-ship-xl{
+  background-image: url('../images/ShipXL.png');
+  background-repeat: no-repeat;
+}
+.background-ship-0{
+  background-image: url('../images/ShipSmallDes.png');
+  background-repeat: no-repeat;
+}
+.background-ship-1{
+  background-image: url('../images/ShipMedDes.png');
+  background-repeat: no-repeat;
+}
+.background-ship-2{
+  background-image: url('../images/ShipLarDes.png');
+  background-repeat: no-repeat;
+}
+.background-ship-3{
+  background-image: url('../images/ShipLarDes.png');
+  background-repeat: no-repeat;
+}
+.background-ship-4{
+  background-image: url('../images/ShipXLDes.png');
+  background-repeat: no-repeat;
+}
+/*Style for the hits and the miss*/
+.mark-ship-hit{
+  background-image: url('../images/hitWhite.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.mark-ship-miss{
+  background-image: url('../images/miss.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/*style to use when text is implemented on the page */
+.text{
+  color: white;
+  font-size: 1.2em;
+}
+/*Debug style */
+.debug{
+  border-style: solid;
+  border-color: #FF0000;
+}
